@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lemon Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+  <script>
+    function incrementLikes() {
+        var countElement = document.getElementById('likeCount');
+        var currentLikes = parseInt(countElement.innerHTML);
+        countElement.innerHTML = currentLikes + 1;
+    }
+    </script>
+    
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>LEMON'S BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">Lemon</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="src/San Francisco12.jpg" alt="San Francisco" style="width:100%" height = "550">
+    <div class="w3-container">
+      <h3><b>San Francisco</b></h3>
+      <h5>California sunset, <span class="w3-opacity">Dec 21, 2023</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>“SAN FRANCISCO HAS ONLY ONE DRAWBACK --- TIS HARD TO LEAVE”. </p>
+      <p> I think people have to go to the San Francsico to see the sunset. Seek the sunset where the Golden Gate Bridge stands tall, beneath its afterglow, all turns to beauty's call.
+      If possible, go together with your beloved. I always believe that silhouettes under the sun are the finest testament to love.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="location.href='San Francisco.html'"><b>READ MORE »</b></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="src/mon0.jpg" alt="Monterey" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Monterey</b></h3>
+      <h5>California Whale, <span class="w3-opacity">Dec 22, 2023</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Alas, I missed the sight of whales. Fortuitously, I have stumbled upon the vast ocean's azure embrace. </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="location.href='Monterey.html'"><b>READ MORE »</b></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="src/me.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Lemon</b></h4>
+      <p>Lazy I may be, yet I adore traveling, delighting in the sight of various landscapes, cherishing aimless wanderings, enjoying time spent with friends, and relishing the beauty of both sunrise and sunset</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Recent Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <a href="San Francisco.html" style="text-decoration: none; color: inherit;">
+          <img src="src/Cali6.png" alt="San Francisco" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">San Francisco</span><br>
+          <span>California Sunset</span>
+        </a>
+      </li>
+      <li class="w3-padding-16">
+        <a href="Monterey.html" style="text-decoration: none; color: inherit;">
+          <img src="src/mon0.jpg" alt="Monterey" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Monterey</span><br>
+          <span>California Whale</span>
+        </a>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Dorum</span><br>
+        <span>Ultricies congue</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Mingsum</span><br>
+        <span>Lorem ipsum dipsum</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
