@@ -1,0 +1,79 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 70%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: flex; /* Align modal content vertically and horizontally */
+    align-items: center; /* Center modal-content vertically */
+    justify-content: center; /* Center modal-content horizontally */
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: auto; /* Allow content to define width */
+    max-width: 90%; /* Maximum width of modal content */
+    height: auto; /* Height is automatic based on content */
+    max-height: 50vh; /* Maximum height of modal content */
+    display: flex; /* Use flex for the content */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Align children horizontally */
+    overflow: hidden; /* Hide overflow */
+}
+
+.swiper-container {
+    width: 100%; /* Set width to 100% of the modal content */
+    height: auto; /* Height is automatic based on content */
+}
+
+
+.swiper-slide {
+    text-align: center; /* Center images horizontally */
+    font-size: 18px;
+    background: #fff; /* Background color for images */
+    display: flex; /* Use flex to align images */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+}
+
+.swiper-slide img {
+    max-width: 100%; /* Image can take up to full width of its container */
+    max-height: 45vh; /* Limit image height to be less than modal content height */
+    object-fit: contain; /* Contain the image without distorting aspect ratio */
+}
+
+
+.close {
+    color: #aaa;
+    position: absolute; /* Position close button absolutely */
+    top: 20px; /* Distance from top */
+    right: 20px; /* Distance from right */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Swiper pagination and navigation buttons styles */
+.swiper-pagination {
+    bottom: 10px; /* Distance from bottom */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff; /* Color of buttons */
+    opacity: 0.7; /* Make buttons slightly transparent */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    opacity: 1; /* Fully opaque on hover */
+}
+
+/* ... other styles ... */
