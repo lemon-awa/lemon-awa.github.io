@@ -3240,26 +3240,34 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: rgba(133, 220, 194, 0.841);
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #6de1c2;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #70d8e3d9;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #513e94;
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #507db5;
 		}
 
 		.wrapper.style3-alt {
+			background-color: #953d75;
+		}
+
+		.wrapper.style4 {
+			background-color: #6c58a0e1;
+		}
+
+		.wrapper.style4-alt {
 			background-color: #953d75;
 		}
 
@@ -3524,7 +3532,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #5c8584;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3761,7 +3769,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #767846f3;
 			}
 
 			#sidebar nav a:after {
